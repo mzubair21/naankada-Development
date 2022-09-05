@@ -447,9 +447,7 @@
         </div>
       </section>
       <!--Review-->
-      <section
-        class="bg-slate-primary w-full min-h-max container sm:max-w-full"
-      >
+      <section class="bg-slate-primary w-full min-h-max">
         <div
           class="m-auto max-w-[1100px] overflow-hidden pb-16 pt-16 sm:w-[900px]"
         >
@@ -497,7 +495,9 @@
     </main>
     <footer>
       <div class="grid grid-cols-2 text-center text-white">
-        <div class="col-span-2 sm:col-span-1 bg-gray-primary">
+        <div
+          class="col-span-2 sm:col-span-1 bg-gray-primary sm:h-80 items-center flex justify-center"
+        >
           <article class="mt-16 mb-8">
             <h2 class="text-orange-primary">Contact Us</h2>
             <p class="text-ssm font-medium font-body leading-relaxed p-4 pb-8">
@@ -507,16 +507,42 @@
             </p>
           </article>
         </div>
-        <div class="col-span-2 sm:col-span-1 bg-black-slate">
-          <article class="mt-16 mb-8">
+        <div
+          class="col-span-2 sm:col-span-1 bg-black-slate sm:h-80 items-center flex justify-center"
+        >
+          <article class="mt-16 mb-16">
             <h2 class="text-orange-primary">Follow Us</h2>
             <p class="text-ssm font-medium font-body leading-relaxed p-4 pb-8">
               <span>Join us on social networks</span>
             </p>
-            <div class="flex">
-              <button class="">fb</button>
-              <button class="">linked</button>
-              <button class="">insta</button>
+            <div class="flex justify-center gap-4">
+              <a
+                href="https://fb.com"
+                class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                target="_blank"
+              >
+                <i
+                  class="absolute top-[50%]bottom-[50%] translate-x-[-50%] translate-y-[-50%] fa-brands fa-facebook-f"
+                ></i>
+              </a>
+              <a
+                href="https://fb.com"
+                class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                target="_blank"
+              >
+                <i
+                  class="absolute top-[50%]bottom-[50%] translate-x-[-50%] translate-y-[-50%] fa-brands fa-linkedin-in"
+                ></i>
+              </a>
+              <a
+                href="https://fb.com"
+                class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                target="_blank"
+              >
+                <i
+                  class="absolute top-[50%]bottom-[50%] translate-x-[-50%] translate-y-[-50%] fa-brands fa-instagram"
+                ></i>
+              </a>
             </div>
           </article>
         </div>
