@@ -11,7 +11,10 @@ module.exports = {
         'black-slate': '#1B2024',
         'white-slate': '#D1D2D3',
         'slate-primary': '#F5F2F0',
-        'orange-primary': '#CC9955',
+        'orange-primary': '#D4A96F',
+        'grey-primary': '#B8B6B5',
+        'grey-text': '#3E3D3C',
+        'gray-primary': '#22272B',
       },
       dropShadow: {
         'text-sm': '1px 1px 0px rgba(0,0,0.90)',
