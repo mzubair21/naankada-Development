@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <!--FontAwsome-->
@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <!-- extrasmall sm-tablets lg-laptops  -->
@@ -327,7 +326,7 @@
       <!-- Just Dial-->
       <section class="pt-10">
         <div
-          class="bg-cover bg-no-repeat bg-center bg- w-full min-h-full h-96"
+          class="bg-fixed bg-cover bg-no-repeat bg-center bg- w-full min-h-full h-96"
           style="background-image: url(./assets/c3.jpg);"
         >
           <div class="w-full h-full bg-black/60">
@@ -340,7 +339,7 @@
                 Just dial and order your favourite food now!
               </h2>
               <button
-                class="font-display text-sm rounded-full sm:w-max w-full px-6 py-3 bg-black hover:bg-white hover:text-black font-medium mt-7 sm:text-ssm sm:px-28 tracking-wide"
+                class="font-display text-sm rounded-full sm:w-max w-full px-6 py-3 bg-black hover:bg-white hover:text-black font-medium mt-7 sm:text-ssm sm:px-28 tracking-wide border-black"
               >
                 Call Now
               </button>
@@ -385,7 +384,7 @@
       <!--Cattering Service-->
       <section class="pt-10 pb-10 m-auto max-w-[1100px]">
         <h2
-          class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold"
+          class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold lowercase"
         >
           Catering Services For All Occasions
         </h2>
@@ -401,7 +400,7 @@
             <div class="card"></div>
             <img
               class="w-full h-full object-cover z-10"
-              src="./assets/a1.jpg"
+              src="./assets/e1.jpg"
               alt=""
             />
           </div>
@@ -416,7 +415,7 @@
             <div class="card"></div>
             <img
               class="w-full h-full object-cover z-10"
-              src="./assets/a2.jpg"
+              src="./assets/e2.jpg"
               alt=""
             />
           </div>
@@ -431,19 +430,67 @@
             <div class="card"></div>
             <img
               class="w-full h-full object-cover z-10"
-              src="./assets/a3.jpg"
+              src="./assets/e3.jpg"
               alt=""
             />
           </div>
           <div class="col-span-3 h-max font-display px-5">
-            <h5 class="sm:text-sm font-display font-medium mt-8">
+            <h5 class="sm:text-sm font-display font-medium mt-8 sm:mt-4">
               Book your catering service now!
             </h5>
             <button
-              class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover:text-orange-primary font-medium sm:px-20 sm:text-ssm mb-8 mt-8"
+              class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover:text-orange-primary font-medium sm:px-20 sm:text-ssm mb-8 mt-8 sm:mb-4"
             >
               Book now
             </button>
+          </div>
+        </div>
+      </section>
+      <!--Review-->
+      <section
+        class="bg-slate-primary w-full min-h-max container sm:max-w-full"
+      >
+        <div
+          class="m-auto max-w-[1100px] overflow-hidden pb-16 pt-16 sm:w-[900px]"
+        >
+          <h2 class="text-4xl sm:text-2xl font-semibold uppercase">
+            Customer Reviews
+          </h2>
+          <div>
+            <div class="px-7 leading-[2.5] sm:leading-[3] mt-8">
+              <span class="text-grey-primary text-3xl sm:text-xl">
+                <i class="fa-sharp fa-solid fa-quote-left scale-y-125"></i>
+              </span>
+              <p
+                class="font-body sm:text-sm italic text-sm opacity-[80%] text-grey-text tracking-wide leading-relaxed sm:leading-[1.5]"
+              >
+                Our event went off without a hitch, the food was wonderful, the
+                staff friendly and the florals were gorgeous! Thank you again
+                for such a great experience; I will definitely be working with
+                you guys in the future and recommending you to friends.
+              </p>
+              <small
+                class="uppercase sm:text-xsm text-sm text-orange-primary font-medium"
+              >
+                Bilal Khan
+              </small>
+            </div>
+            <div class="text-black-slate/60 mb-8 text-xs mt-2">
+              <button
+                class="hover:text-slate-primary hover:bg-gray-primary/70 rounded-full p-4 relative"
+              >
+                <i
+                  class="fa-solid fa-angle-left absolute top-[50%]bottom-[50%] translate-x-[-50%] translate-y-[-50%]"
+                ></i>
+              </button>
+              <button
+                class="hover:text-slate-primary hover:bg-gray-primary/70 rounded-full p-4 relative"
+              >
+                <i
+                  class="fa-solid fa-angle-right absolute top-[50%]bottom-[50%] translate-x-[-50%] translate-y-[-50%]"
+                ></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>

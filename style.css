@@ -5,3 +5,15 @@
 .card {
   @apply w-full bg-[#00000073] opacity-70 h-full absolute top-0 peer-hover:opacity-100 z-0 peer-hover:bg-[#5247472f] transition-all duration-500;
 }
+button {
+  @apply duration-300 transition-colors focus:outline-none focus-visible:ring-2 ring-gray-primary/60;
+}
+button.border-orange-primary {
+  @apply focus-visible:ring-2 ring-black;   
+}
+button.border-black {
+  @apply focus-visible:ring-2 ring-white;
+}
+button.border-white {
+  @apply focus-visible:bg-white focus-visible:text-black ring-black;
+}
