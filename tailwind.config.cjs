@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         'black-slate': '#1B2024',
         'white-slate': '#D1D2D3',
+        'slate-primary': '#F5F2F0',
+        'orange-primary': '#CC9955',
       },
       dropShadow: {
         'text-sm': '1px 1px 0px rgba(0,0,0.90)',
