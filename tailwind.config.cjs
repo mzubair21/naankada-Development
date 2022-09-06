@@ -36,6 +36,7 @@ module.exports = {
         sans: ['Cinzel', 'sans-serif'],
         display: ['Roboto'],
         body: ['Lora'],
+        Amatic: ['Amatic SC'],
       },
       fontSize: {
         xsm: ['clamp(0.62rem, calc(0.58rem + 0.30vw), 0.92rem)', '1.4'],
