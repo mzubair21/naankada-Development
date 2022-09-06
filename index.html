@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +27,10 @@
       <h1 class="text font-Amatic text-white block">
         Cooking in progress..
       </h1>
-      <div class="" id="cooking">
+      <div
+        class="flex items-center justify-center -translate-x-48 sm:-translate-x-14"
+        id="cooking"
+      >
         <div class="bubble"></div>
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -44,45 +51,106 @@
       </div>
     </div>
     <div id="body" class="font-sans hidden text-base">
-      <header class="relative">
-        <!--Notification Bar-->
+      <!--Notification Bar-->
+      <div
+        class="hidden font-body lg:block w-full bg-black-slate text-xsm font-medium absolute top-0 z-10"
+      >
         <div
-          class="hidden font-body lg:block w-full bg-black-slate text-xsm font-medium absolute top-0 z-10"
+          class="flex items-center container text-white-slate p-3 pl-10 pr-10 max-w-[1100px]"
         >
-          <div
-            class="flex items-center container text-white-slate p-3 pl-10 pr-10 max-w-[1100px]"
-          >
-            <div class="flex flex-grow items-center">
-              <span class="text-xsm pr-2 pl-3 shrink-0">
-                <i class="-rotate-90 fa-solid fa-phone"></i>
-              </span>
-              <span class="font-medium">+923470707777</span>
-            </div>
-            <div class="flex justify-center items-center">
-              <p class="inline-block font-medium">Contact Us</p>
-              <span class="text-xs pl-3">
-                <i class="fa-brands fa-facebook-f"></i>
-              </span>
-              <span class="text-xs pl-3">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </span>
-              <span class="text-xs pl-3">
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </div>
+          <div class="flex flex-grow items-center">
+            <span class="text-xsm pr-2 pl-3 shrink-0">
+              <i class="-rotate-90 fa-solid fa-phone"></i>
+            </span>
+            <span class="font-medium">+923470707777</span>
+          </div>
+          <div class="flex justify-center items-center">
+            <p class="inline-block font-medium">Contact Us</p>
+            <span class="text-xs pl-3">
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span class="text-xs pl-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </span>
+            <span class="text-xs pl-3">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
           </div>
         </div>
+      </div>
+
+      <!--Navbar-->
+      <nav class="navbar sticky w-full top-0 z-20">
+        <div
+          class="max-h-[90px] w-full flex justify-center items-center lg:justify-start px-3 lg:px-1 active lg:container lg:max-w-[1100px]"
+        >
+          <button
+            id="nav-toggler"
+            class="lg:hidden transition-all ease-in duration-600 menu p-2 flex flex-col z-30"
+          >
+            <span
+              class="inline-block bg-white rounded-sm text-white h-[1px] w-[25px]"
+            ></span>
+            <span
+              class="inline-block bg-white rounded-sm text-white h-[1px] w-[25px] mt-[7px]"
+            ></span>
+            <span
+              class="inline-block bg-white rounded-sm text-white h-[1px] w-[25px] mt-[7px]"
+            ></span>
+          </button>
+          <img
+            class="h-[100px] w-full lg:w-max object-contain"
+            src="./assets/Logo.png"
+            alt=""
+          />
+          <ul
+            class="hidden lg:flex uppercase lg:text-xsm text-white lg:ml-auto"
+          >
+            <li class="active lg:p-5"><a href="">Home</a></li>
+            <li class="lg:p-5"><a href="">About</a></li>
+            <li class="lg:p-5"><a href="">Menu</a></li>
+            <li class="lg:p-5"><a href="">Tandoori Catering</a></li>
+            <li class="lg:p-5"><a href="">Locations</a></li>
+            <li class="lg:p-5"><a href="">Franchising</a></li>
+            <li class="lg:p-5"><a href="">Gallery</a></li>
+          </ul>
+        </div>
+        <ul
+          class="menu-collapse absolute left-[-100%] opacity-0 top-0 bg-black/90 w-full h-screen flex flex-col justify-center items-center text-xl uppercase font-medium min-h-[600px] transition-all duration-300"
+        >
+          <li class="text-white hover:text-orange-primary active p-3">
+            <a href="">Home</a>
+          </li>
+          <li class="text-white hover:text-orange-primary p-3">
+            <a href="">About</a>
+          </li>
+          <li class="text-white hover:text-orange-primary p-3">
+            <a href="">Menu</a>
+          </li>
+          <li class="text-white hover:text-orange-primary p-3">
+            <a href="">Tandoor CAtering</a>
+          </li>
+          <li class="text-white hover:text-orange-primary p-3">
+            <a href="">Franchising</a>
+          </li>
+          <li class="text-white hover:text-orange-primary p-3">
+            <a href="">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="relative">
         <!--Landing Page-->
         <div
           style="background-image: url(./assets/pakistani-cuisine-1.jpg);"
-          class="sm:min-h-screen h-max bg-cover bg-center bg-fixed"
+          class="relative top-0 sm:min-h-screen h-max bg-cover bg-center bg-fixed"
         >
           <div
             class="bg-[#0c0200]/70 sm:min-h-screen h-full flex flex-col items-center justify-center text-white text-center selection:bg-black/80"
           >
             <div class="px-5">
               <h2
-                class="font-medium text-3xl mb-7 mt-32 md:mt-24 lg:mt-32 px-5"
+                class="font-medium text-3xl mb-7 mt-36 md:mt-24 lg:mt-32 px-5"
               >
                 We are Open To Taking Out Orders
               </h2>
