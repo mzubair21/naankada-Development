@@ -298,3 +298,17 @@ button.border-white {
     }
   }
 }
+.animate-bounce-slow:hover {
+  animation: b 1.5s ease-in infinite;
+}
+@keyframes b {
+  0% {
+    transform: translateX(-24px) translateY(-5px);
+  }
+  50% {
+    transform: translateX(-24px) translateY(0px);
+  }
+  100% {
+    transform: translateX(-24px) translateY(-5px);
+  }
+}

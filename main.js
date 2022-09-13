@@ -9,7 +9,7 @@ document.addEventListener('readystatechange', function () {
       loader.style.opacity = 0
       setTimeout(() => {
         loader.classList.add('hidden')
-      }, 300)
+      }, 0)
     }, 0)
   }
 

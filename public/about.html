@@ -122,10 +122,10 @@
             alt=""
           />
           <ul
-            class="hidden lg:flex uppercase lg:text-xsm text-white lg:ml-auto font-semibold"
+            class="hidden lg:flex uppercase lg:text-xsm text-white lg:ml-auto font-semibold z-10"
           >
-            <li class="active lg:p-5"><a href="">Home</a></li>
-            <li class="lg:p-5"><a href="">About</a></li>
+            <li class="lg:p-5"><a href="/index.html">Home</a></li>
+            <li class="active lg:p-5"><a href="#">About</a></li>
             <li class="lg:p-5"><a href="">Menu</a></li>
             <li class="lg:p-5"><a href="">Tandoori Catering</a></li>
             <li class="lg:p-5"><a href="">Locations</a></li>
@@ -133,15 +133,17 @@
             <li class="lg:p-5"><a href="">Gallery</a></li>
           </ul>
         </div>
-        <div class="overflow-y-auto h-screen absolute left-0 top-0 w-full">
+        <div
+          class="overflow-y-auto lg:hidden h-screen absolute left-0 top-0 w-full"
+        >
           <ul
-            class="lg:hidden menu-collapse absolute left-[-100%] opacity-0 top-0 bg-black/90 w-full h-screen flex flex-col justify-center items-center text-xl uppercase font-medium min-h-[380px] transition-all duration-300 sm:min-h-[450px]"
+            class="menu-collapse absolute left-[-100%] opacity-0 top-0 bg-black/90 w-full h-screen flex flex-col justify-center items-center text-xl uppercase font-medium min-h-[380px] transition-all duration-300 sm:min-h-[450px]"
           >
             <li class="text-white hover:text-orange-primary active p-3">
               <a href="">Home</a>
             </li>
             <li class="text-white hover:text-orange-primary p-3">
-              <a href="">About</a>
+              <a href="/about.html">About</a>
             </li>
             <li class="text-white hover:text-orange-primary p-3">
               <a href="">Menu</a>
@@ -168,310 +170,29 @@
           <div
             class="bg-[#0c0200]/70 lg:min-h-screen h-full flex flex-col items-center justify-center text-white text-center selection:bg-black/80"
           >
-            <div class="px-5">
+            <div class="px-5 lg:w-[1150px]">
               <h2
-                class="font-medium text-3xl mb-7 mt-36 md:mt-24 lg:mt-32 px-5"
+                class="font-medium font-display text-3xl mb-7 mt-36 md:mt-24 lg:mt-32 px-5"
               >
-                We are Open To Taking Out Orders
+                Celebrating 27 years
               </h2>
-              <p class="font-display text-ssm">
-                Explore our menu options and place a curbside pick-up order.
-                Enjoy fresh food from the comfort of your own home. Stay healthy
-                and safe, friends!
-              </p>
-              <button
-                class="font-display text-sm rounded-full border sm:w-max w-full border-white px-6 py-3 hover:bg-white hover:text-black font-medium mt-7 mb-24"
+              <p
+                class="font-display text-sm sm:text-ssm pb-20 font-light leading-relaxed"
               >
-                Order Online
-              </button>
+                Tandoori was first established in 1993. We start up with zeal,
+                we still take it with enthusiasm. Our devotion makes our visions
+                more broader and our hard work and consistency never let us down
+                in any pandemic. That's the only reason behind us celebrating 27
+                years and providing our highly demanding services from the past
+                27 years
+              </p>
             </div>
           </div>
         </div>
       </header>
       <main class="text-center">
-        <!--Arrivals-->
-        <section
-          class="pt-10 pb-10 m-auto max-w-[1100px] w-full overflow-hidden"
-        >
-          <h2
-            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold"
-          >
-            New Arrivals
-          </h2>
-          <div class="grid grid-cols-3 pt-8 sm:gap-6">
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Tandoori Chicken
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/a1.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Tandoori Chargha
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/a2.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Tandoori Broast
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/a3.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-        <!--Hi Tea Buffet-->
-        <section
-          class="pt-10 pb-10 m-auto max-w-[1100px] w-full overflow-hidden"
-        >
-          <h2
-            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold"
-          >
-            HI-TEA BUFFET
-          </h2>
-          <div class="grid grid-cols-3 pt-8 sm:gap-6">
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Starters
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/b1.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Chinese
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/b2.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Desi
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/b3.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-        <!--Free Home Delivery-->
-        <section class="pb-12 pt-10">
-          <div
-            class="bg-cover bg-no-repeat bg-center bg- w-full min-h-full h-96 bg-fixed"
-            style="background-image: url(./assets/s2.jpg);"
-          >
-            <div class="w-full h-full bg-black/70">
-              <div
-                class="w-full h-full text-white container flex flex-col items-center justify-center max-w-[990px]"
-              >
-                <h2 class="uppercase text-2xl font-semibold pb-5">
-                  Free Home Delivery
-                </h2>
-                <p class="text-ssm font-display font-light">
-                  Our customer&apos;s satisfaction is our first priority. By
-                  considering their feasibility and comfort we established our
-                  free home delivery services. We are fulfilling their demands
-                  by providing them hot, fresh and delectable food exactly at
-                  their residence.
-                </p>
-                <button
-                  class="font-display text-sm rounded-full border sm:w-max w-full border-white px-6 py-3 hover:bg-white hover:text-black font-medium mt-7 uppercase sm:px-20 sm:text-ssm"
-                >
-                  Call now
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Specialities-->
-        <section
-          class="pt-10 pb-10 m-auto max-w-[1100px] w-full overflow-hidden"
-        >
-          <h2
-            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold"
-          >
-            SPECIALITIES
-          </h2>
-          <div class="grid grid-cols-3 pt-8 sm:gap-6">
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Dum Biryani
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/c1.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                BBQ Platter
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/c2.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Chicken Karahi
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/c3.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-        <!--CUISINE-->
-        <section
-          class="pt-10 pb-10 m-auto max-w-[1100px] w-full overflow-hidden"
-        >
-          <h2
-            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold"
-          >
-            CUISINE
-          </h2>
-          <div class="grid grid-cols-3 pt-8 sm:gap-6">
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Chinese Cuisine
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/d1.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Pakistani Cuisine
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/d2.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Continental Cuisine
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/d3.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-        <!-- Just Dial-->
-        <section class="pt-10">
-          <div
-            class="bg-fixed bg-cover bg-no-repeat bg-center bg- w-full min-h-full h-96"
-            style="background-image: url(./assets/c3.jpg);"
-          >
-            <div class="w-full h-full bg-black/60">
-              <div
-                class="w-full h-full text-white container flex flex-col items-center justify-center"
-              >
-                <h2
-                  class="uppercase tracking-wide leading-snug text-3xl sm:text-xl font-semibold pb-5"
-                >
-                  Just dial and order your favourite food now!
-                </h2>
-                <button
-                  class="font-display text-sm rounded-full sm:w-max w-full px-6 py-3 bg-black hover:bg-white hover:text-black font-medium mt-7 sm:text-ssm sm:px-28 tracking-wide border-black"
-                >
-                  Call Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
         <!--About Us-->
-        <section class="pb-12">
+        <section>
           <div
             class="bg-slate-primary w-full min-h-full min-h-96 h-max bg-fixed"
           >
@@ -480,142 +201,57 @@
                 class="w-full h-full text-black container flex flex-col items-center justify-center max-w-[1190px] font-display"
               >
                 <h2
-                  class="font-sans uppercase text-3xl sm:text-xl font-semibold pb-7 pt-16"
+                  class="font-display text-2xl sm:text-xl font-semibold pb-7 pt-16"
                 >
-                  CELEBRATING 27 YEARS
+                  About Us
                 </h2>
                 <p class="sm:text-sm font-display font-light">
                   <span class="block">
                     Tandoori was first established in 1993. We start up with
-                    zeal us still taking it with enthusiasm.
-                  </span>
-                  <span class="mt-8 block">
-                    Our devotion makes our visions broader and our hard work and
-                    consistency never let us down in any pandemic that&apos;s
-                    the only reason we are celebrating 27 years and providing
-                    our highly demanding services from the past 27 years.
+                    zeal, we still take it with enthusiasm. Our devotion makes
+                    our visions more broader and our hard work and consistency
+                    never let us down in any pandemic. That's the only reason
+                    behind us celebrating 27 years and providing our highly
+                    demanding services from the past 27 years
                   </span>
                 </p>
-                <button
-                  class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover:text-orange-primary font-medium sm:px-20 sm:text-ssm mb-24 mt-14"
-                >
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <!--Cattering Service-->
-        <section
-          class="pt-10 pb-10 m-auto max-w-[1100px] w-full overflow-hidden"
-        >
-          <h2
-            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold lowercase"
-          >
-            Naan Catering For All Occasions
-          </h2>
-          <div class="grid grid-cols-3 pt-8 sm:gap-6">
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Weeding
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/e1.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Corporate
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/e2.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
-            >
-              <p
-                class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
-              >
-                Banquet
-              </p>
-              <div class="card"></div>
-              <img
-                class="w-full h-full object-cover z-10"
-                src="./assets/e3.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-span-3 h-max font-display px-5">
-              <h5 class="sm:text-sm font-display font-medium mt-8 sm:mt-4">
-                Book your catering service now!
-              </h5>
-              <button
-                class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover:text-orange-primary font-medium sm:px-20 sm:text-ssm mb-8 mt-8 sm:mb-4"
-              >
-                Book now
-              </button>
-            </div>
-          </div>
-        </section>
-        <!--Review-->
-        <section class="bg-slate-primary w-full min-h-max">
-          <div
-            class="m-auto max-w-[1100px] overflow-hidden pb-16 pt-16 sm:max-w-[900px]"
-          >
-            <h2 class="text-4xl sm:text-2xl font-semibold uppercase">
-              Customer Reviews
-            </h2>
-            <div>
-              <div class="px-7 leading-[2.5] sm:leading-[3] mt-8">
-                <span class="text-grey-primary text-3xl sm:text-xl">
-                  <i class="fa-sharp fa-solid fa-quote-left scale-y-125"></i>
-                </span>
-                <p
-                  class="font-body sm:text-sm italic text-sm opacity-[80%] text-grey-text tracking-wide leading-relaxed sm:leading-[1.5]"
-                >
-                  Our event went off without a hitch, the food was wonderful,
-                  the staff friendly and the florals were gorgeous! Thank you
-                  again for such a great experience; I will definitely be
-                  working with you guys in the future and recommending you to
-                  friends.
-                </p>
-                <small
-                  class="uppercase sm:text-xsm text-sm text-orange-primary font-medium"
-                >
-                  Bilal Khan
-                </small>
-              </div>
-              <div class="text-black-slate/60 mb-8 text-xs mt-2">
-                <button
-                  class="hover:text-slate-primary hover:bg-gray-primary/70 rounded-full p-4 relative"
-                >
-                  <i
-                    class="fa-solid fa-angle-left absolute top-[50%]bottom-[50%] translate-x-[-50%] translate-y-[-50%]"
-                  ></i>
-                </button>
-                <button
-                  class="hover:text-slate-primary hover:bg-gray-primary/70 rounded-full p-4 relative"
-                >
-                  <i
-                    class="fa-solid fa-angle-right absolute top-[50%]bottom-[50%] translate-x-[-50%] translate-y-[-50%]"
-                  ></i>
-                </button>
+                <!--About Body-->
+                <section class="pt-16 pb-16 sm:pb-32">
+                  <div class="grid grid-cols-2 gap-4 sm:gap-0">
+                    <div
+                      class="col-span-2 sm:col-span-1 sm:order-2 h-72 sm:h-full sm:-translate-x-6 animate-bounce-slow"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        src="assets/f1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="col-span-2 sm:col-span-1 sm:order-1 bg-white text-left px-5 pb-12 sm:translate-x-6 sm:translate-y-10"
+                    >
+                      <h3
+                        class="font-bold text-xl sm:text-base pt-2 sm:pt-6 pb-4"
+                      >
+                        Mission
+                      </h3>
+                      <p
+                        class="font-light text-sm sm:text-ssm leading-relaxed sm:leading-normal"
+                      >
+                        The mission is not only have a great tasting food, but
+                        have efficient and friendly service because customer
+                        satisfaction is paramount. We want to be the restaurant
+                        choice for all families and singles young’s and old,
+                        male or female. Employee welfare will be equally
+                        important to our success. Everyone will be treated
+                        fairly and with the utmost respect. We want our
+                        employees to feel a part of the success of Tandoori
+                        Restaurants.
+                      </p>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
