@@ -10,7 +10,7 @@ document.addEventListener('readystatechange', function () {
       setTimeout(() => {
         loader.classList.add('hidden')
       }, 300)
-    }, 2000)
+    }, 0)
   }
 
   //Navbar Toggler
