@@ -38,6 +38,7 @@
   </head>
   <!-- extrasmall sm-tablets lg-laptops  -->
   <body class="transition-opacity duration-500">
+    <!--Loading Screen-->
     <div class="loader min-h-screen bg-black transition-opacity duration-500">
       <h1 class="text font-Amatic text-white block">
         Cooking in progress..
@@ -68,7 +69,7 @@
     <div id="body" class="font-sans hidden text-base">
       <!--Notification Bar-->
       <div
-        class="hidden font-body lg:block lg:fixed w-full bg-black-slate text-xsm font-medium top-0 z-20"
+        class="hidden font-body lg:block lg:fixed w-full bg-black-slate text-xsm font-medium top-0 z-20 pt-1"
       >
         <div
           class="flex items-center container text-white-slate p-3 pl-10 pr-10 max-w-[1100px]"
@@ -103,7 +104,7 @@
         >
           <button
             id="nav-toggler"
-            class="lg:hidden transition-all ease-in duration-600 menu p-2 flex flex-col z-30"
+            class="lg:hidden transition-all ease-in duration-600 menu p-2 flex flex-col z-30 absolute left-3"
           >
             <span
               class="inline-block bg-white rounded-sm text-white h-[1px] w-[25px]"
@@ -121,7 +122,7 @@
             alt=""
           />
           <ul
-            class="hidden lg:flex uppercase lg:text-xsm text-white lg:ml-auto"
+            class="hidden lg:flex uppercase lg:text-xsm text-white lg:ml-auto font-semibold"
           >
             <li class="active lg:p-5"><a href="">Home</a></li>
             <li class="lg:p-5"><a href="">About</a></li>
@@ -132,38 +133,40 @@
             <li class="lg:p-5"><a href="">Gallery</a></li>
           </ul>
         </div>
-        <ul
-          class="menu-collapse absolute left-[-100%] opacity-0 top-0 bg-black/90 w-full h-screen flex flex-col justify-center items-center text-xl uppercase font-medium min-h-[600px] transition-all duration-300"
-        >
-          <li class="text-white hover:text-orange-primary active p-3">
-            <a href="">Home</a>
-          </li>
-          <li class="text-white hover:text-orange-primary p-3">
-            <a href="">About</a>
-          </li>
-          <li class="text-white hover:text-orange-primary p-3">
-            <a href="">Menu</a>
-          </li>
-          <li class="text-white hover:text-orange-primary p-3">
-            <a href="">Tandoor CAtering</a>
-          </li>
-          <li class="text-white hover:text-orange-primary p-3">
-            <a href="">Franchising</a>
-          </li>
-          <li class="text-white hover:text-orange-primary p-3">
-            <a href="">Gallery</a>
-          </li>
-        </ul>
+        <div class="overflow-y-auto h-screen absolute left-0 top-0 w-full">
+          <ul
+            class="lg:hidden menu-collapse absolute left-[-100%] opacity-0 top-0 bg-black/90 w-full h-screen flex flex-col justify-center items-center text-xl uppercase font-medium min-h-[380px] transition-all duration-300 sm:min-h-[450px]"
+          >
+            <li class="text-white hover:text-orange-primary active p-3">
+              <a href="">Home</a>
+            </li>
+            <li class="text-white hover:text-orange-primary p-3">
+              <a href="">About</a>
+            </li>
+            <li class="text-white hover:text-orange-primary p-3">
+              <a href="">Menu</a>
+            </li>
+            <li class="text-white hover:text-orange-primary p-3">
+              <a href="">Tandoor CAtering</a>
+            </li>
+            <li class="text-white hover:text-orange-primary p-3">
+              <a href="">Franchising</a>
+            </li>
+            <li class="text-white hover:text-orange-primary p-3">
+              <a href="">Gallery</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <header class="relative">
         <!--Landing Page-->
         <div
           style="background-image: url(./assets/pakistani-cuisine-1.jpg);"
-          class="relative top-0 sm:min-h-screen h-max bg-cover bg-center bg-fixed"
+          class="relative top-0 sm:min-h-[550px] sm:h-[85vh] lg:min-h-screen h-max bg-cover bg-center bg-fixed"
         >
           <div
-            class="bg-[#0c0200]/70 sm:min-h-screen h-full flex flex-col items-center justify-center text-white text-center selection:bg-black/80"
+            class="bg-[#0c0200]/70 lg:min-h-screen h-full flex flex-col items-center justify-center text-white text-center selection:bg-black/80"
           >
             <div class="px-5">
               <h2
