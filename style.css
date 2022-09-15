@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply transition-all duration-300;
-}
 nav.sticky {
   @apply bg-black-slate;
 }
@@ -28,7 +25,10 @@ nav.active .menu span:nth-child(3) {
   transform: translate(2px, -8px) rotateZ(45deg);
 }
 nav.active .menu-collapse {
-  @apply opacity-100 left-0;
+  @apply opacity-100;
+}
+nav.active .menu-container {
+  @apply left-0;
 }
 .menu span {
   @apply transition-all ease-in duration-200;

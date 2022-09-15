@@ -14,9 +14,13 @@ document.addEventListener('readystatechange', function () {
   }
 
   //Navbar Toggler
-  const nav_toggler = document.getElementById('nav-toggler')
-  nav_toggler.addEventListener('click', () => {
+  const navbar = document.getElementById('nav-toggler')
+  navbar.addEventListener('click', () => {
     document.querySelector('.navbar').classList.toggle('active')
+  })
+  const nav = document.getElementById('nav-toggler')
+  nav.addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('active')
   })
 
   //Onscroll
@@ -25,8 +29,6 @@ document.addEventListener('readystatechange', function () {
     if (window.scrollY > 100) {
       document.querySelector('.navbar').classList.remove('fixed')
       document.querySelector('.navbar').classList.add('sticky')
-
-      console.log('chalo bhai')
     } else {
       document.querySelector('.navbar').classList.add('fixed')
       document.querySelector('.navbar').classList.remove('sticky')
