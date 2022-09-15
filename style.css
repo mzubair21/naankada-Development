@@ -49,6 +49,15 @@ ul {
 .card {
   @apply w-full bg-[#00000073] opacity-70 h-full absolute top-0 peer-hover:opacity-100 z-0 peer-hover:bg-[#5247472f];
 }
+.card-anim {
+  @apply transition-all duration-500 delay-100;
+}
+.card-g-container {
+  @apply col-span-3 sm:col-span-1 h-48 sm:h-60 sm:w-full relative ml-2 mr-2 mb-10 overflow-hidden;
+}
+.card-g-img {
+  @apply w-full h-full object-cover z-10 peer-hover:scale-105 transition-all duration-[800ms];
+}
 button {
   @apply duration-300 transition-colors focus:outline-none focus-visible:ring-2 ring-gray-primary/60;
 }
