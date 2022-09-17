@@ -9,8 +9,8 @@ document.addEventListener('readystatechange', function () {
       loader.style.opacity = 0
       setTimeout(() => {
         loader.classList.add('hidden')
-      }, 0)
-    }, 0)
+      }, 300)
+    }, 700)
   }
 
   //Navbar Toggler
@@ -33,5 +33,18 @@ document.addEventListener('readystatechange', function () {
       document.querySelector('.navbar').classList.add('fixed')
       document.querySelector('.navbar').classList.remove('sticky')
     }
+  })
+
+  //links
+  var fb = 'http://fb.com/'
+  var insta = 'http://instagram.com/'
+  var linkedin = 'http://linkedin.com/'
+
+  var links = document.querySelectorAll('.link')
+  links.forEach((link) => {
+    link.target = '_blank'
+    if (link.classList.contains('fb')) link.href = fb
+    else if (link.classList.contains('linkedin')) link.href = linkedin
+    else if (link.classList.contains('insta')) link.href = insta
   })
 })
