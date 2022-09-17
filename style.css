@@ -313,15 +313,55 @@ button.border-white {
 .animate-bounce-slow:hover {
   animation: b 1.5s ease-in infinite;
 }
+.animate-bounce-left:hover {
+  animation: a 1.5s ease-in infinite;
+}
+
 @keyframes b {
   0% {
-    transform: translateX(-24px) translateY(-5px);
+    transform: translateY(-5px);
   }
   50% {
-    transform: translateX(-24px) translateY(0px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateX(-24px) translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@keyframes a {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (min-width: 767px) {
+  @keyframes b {
+    0% {
+      transform: translateX(-24px) translateY(-5px);
+    }
+    50% {
+      transform: translateX(-24px) translateY(0px);
+    }
+    100% {
+      transform: translateX(-24px) translateY(-5px);
+    }
+  }
+  @keyframes a {
+    0% {
+      transform: translateX(24px) translateY(-5px);
+    }
+    50% {
+      transform: translateX(24px) translateY(0px);
+    }
+    100% {
+      transform: translateX(24px) translateY(-5px);
+    }
   }
 }
 
