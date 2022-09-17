@@ -58,8 +58,8 @@ ul {
 .card-g-img {
   @apply w-full h-full object-cover z-10 peer-hover:scale-105 transition-all duration-[800ms];
 }
-.bg-locations {
-  background-position: right 60% bottom 70%;
+.bg-cattering {
+  background-position: left 10% bottom 15%;
 }
 button {
   @apply duration-300 transition-colors focus:outline-none focus-visible:ring-2 ring-gray-primary/60;
