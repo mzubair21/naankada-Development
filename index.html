@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
@@ -8,7 +8,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <!--Website Thumnail Seo-->
-    <meta name="msapplication-TileImage" content="./assets/Logo.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://imgur.com/a/4vOrVUc"
+    />
 
     <meta property="og:site_name" content="Naan Kada" />
     <meta
@@ -16,12 +19,16 @@
       content="Serving special naans for all occasions"
     />
     <meta property="og:description" content="Naan Kada - Try it one time" />
-    <meta property="og:image" itemprop="image" content="./assets/Logo.png" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://imgur.com/a/4vOrVUc"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="./assets/Logo.png" />
+    <meta property="og:url" content="https://imgur.com/a/4vOrVUc" />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,10 +46,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <title>Vite App</title>
+    <title>Home - NaanKada</title>
   </head>
   <!-- extrasmall sm-tablets lg-laptops  -->
-  <body class="">
+  <body>
     <!--Loading Screen-->
     <div class="loader min-h-screen bg-black transition-opacity duration-500">
       <h1 class="text font-Amatic text-white block">
@@ -80,22 +87,36 @@
           class="flex items-center container text-white-slate p-3 pl-10 pr-10 max-w-[1100px]"
         >
           <div class="flex flex-grow items-center">
-            <span class="text-xsm pr-2 pl-3 shrink-0">
-              <i class="-rotate-90 fa-solid fa-phone"></i>
-            </span>
-            <span class="font-medium">+923106874447</span>
+            <a
+              class="hover-orange"
+              target="_blank"
+              href="http://wa.me/+923126081289"
+            >
+              <span class="text-xsm pr-2 pl-3 shrink-0">
+                <i class="-rotate-90 fa-solid fa-phone"></i>
+              </span>
+              <span class="font-medium">+923126081289</span>
+            </a>
           </div>
           <div class="flex justify-center items-center">
-            <p class="inline-block font-medium">Contact Us</p>
-            <span class="text-xs pl-3">
-              <i class="fa-brands fa-facebook-f"></i>
-            </span>
-            <span class="text-xs pl-3">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </span>
-            <span class="text-xs pl-3">
-              <i class="fa-brands fa-instagram"></i>
-            </span>
+            <p class="inline-block font-medium hover-orange">
+              Contact Us
+            </p>
+            <a class="hover-orange" href="">
+              <span class="text-xs pl-3">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+            </a>
+            <a href="#linkedin" class="hover-orange">
+              <span class="text-xs pl-3">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </span>
+            </a>
+            <a class="hover-orange" href="#insta">
+              <span class="text-xs pl-3">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -136,7 +157,6 @@
               <a href="/cattering.html">Tandoori Catering</a>
             </li>
             <li class="lg:p-5"><a href="/locations.html">Locations</a></li>
-            <li class="lg:p-5"><a href="/franchising.html">Franchising</a></li>
             <li class="lg:p-5"><a href="/gallery.html">Gallery</a></li>
           </ul>
         </div>
@@ -144,27 +164,24 @@
           class="lg:hidden overflow-y-auto h-screen absolute left-[-100%] top-0 w-full menu-container"
         >
           <ul
-            class="menu-collapse absolute left-[0%] opacity-0 top-0 bg-black/90 w-full h-full flex flex-col justify-center items-center text-xl uppercase font-medium min-h-[480px] transition-all duration-300 sm:min-h-[550px]"
+            class="menu-collapse absolute left-[0%] opacity-0 top-0 bg-black/90 w-full h-full flex flex-col justify-center items-center text-xl uppercase font-medium min-h-[380px] transition-all duration-300 sm:min-h-[450px]"
           >
-            <li class="text-white hover:text-orange-primary active p-3">
+            <li class="text-white hover-orange active p-3">
               <a href="/index.html">Home</a>
             </li>
-            <li class="text-white hover:text-orange-primary p-3">
+            <li class="text-white hover-orange p-3">
               <a href="/about.html">About</a>
             </li>
-            <li class="text-white hover:text-orange-primary p-3">
+            <li class="text-white hover-orange p-3">
               <a href="/menu.html">Menu</a>
             </li>
-            <li class="text-white hover:text-orange-primary p-3">
+            <li class="text-white hover-orange p-3">
               <a href="/cattering.html">Tandoor Catering</a>
             </li>
-            <li class="text-white hover:text-orange-primary p-3">
+            <li class="text-white hover-orange p-3">
               <a href="/locations.html">Locations</a>
             </li>
-            <li class="text-white hover:text-orange-primary p-3">
-              <a href="/franchising.html">Franchising</a>
-            </li>
-            <li class="text-white hover:text-orange-primary p-3">
+            <li class="text-white hover-orange p-3">
               <a href="/gallery.html">Gallery</a>
             </li>
           </ul>
@@ -174,7 +191,8 @@
       <header class="relative">
         <!--Landing Page-->
         <div
-          style="background-image: url(./assets/pakistani-cuisine-1.jpg);"
+          id="callnow"
+          style="background-image: url(./assets/bg1.jpg);"
           class="relative top-0 sm:min-h-[550px] sm:h-[85vh] lg:min-h-screen h-max bg-cover bg-center bg-fixed"
         >
           <div
@@ -191,11 +209,13 @@
                 Enjoy fresh food from the comfort of your own home. Stay healthy
                 and safe, friends!
               </p>
-              <button
-                class="font-display text-sm rounded-full border sm:w-max w-full border-white px-6 py-3 hover:bg-white hover:text-black font-medium mt-7 mb-24"
-              >
-                Order Online
-              </button>
+              <a target="_blank" href="http://wa.me/+923126081289">
+                <button
+                  class="font-display text-sm rounded-full border sm:w-max w-full border-white px-6 py-3 hover:bg-white hover:text-black font-medium mt-7 mb-24"
+                >
+                  Order Online
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -206,18 +226,18 @@
           class="pt-10 pb-10 m-auto max-w-[1100px] w-full overflow-hidden"
         >
           <h2
-            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold"
+            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold uppercase"
           >
             New Arrivals
           </h2>
           <div class="grid grid-cols-3 pt-8 sm:gap-6">
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-96 sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Tandoori Chicken
+                Tandoori Kulcha
               </p>
               <div class="card"></div>
               <img
@@ -227,12 +247,12 @@
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-96 sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Tandoori Chargha
+                Vegitable Naan
               </p>
               <div class="card"></div>
               <img
@@ -242,12 +262,12 @@
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-96 sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Tandoori Broast
+                Cheese Naan
               </p>
               <div class="card"></div>
               <img
@@ -258,18 +278,18 @@
             </div>
           </div>
         </section>
-        <!--Hi Tea Buffet-->
+        <!--Hot Selling-->
         <section
           class="pt-10 pb-10 m-auto max-w-[1100px] w-full overflow-hidden"
         >
           <h2
-            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold"
+            class="text-black text-3xl sm:text-2xl font-semibold sm:font-semibold uppercase"
           >
-            HI-TEA BUFFET
+            Hot Sellings
           </h2>
           <div class="grid grid-cols-3 pt-8 sm:gap-6">
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
@@ -279,27 +299,27 @@
               <div class="card"></div>
               <img
                 class="w-full h-full object-cover z-10"
-                src="./assets/b1.jpg"
+                src="./assets/naan0.jpg"
                 alt=""
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Chinese
+                Wraps
               </p>
               <div class="card"></div>
               <img
                 class="w-full h-full object-cover z-10"
-                src="./assets/b2.jpg"
+                src="./assets/naan1.jpg"
                 alt=""
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
@@ -309,7 +329,7 @@
               <div class="card"></div>
               <img
                 class="w-full h-full object-cover z-10"
-                src="./assets/b3.jpg"
+                src="./assets/naan2.jpg"
                 alt=""
               />
             </div>
@@ -335,11 +355,13 @@
                   by providing them hot, fresh and delectable food exactly at
                   their residence.
                 </p>
-                <button
-                  class="font-display text-sm rounded-full border sm:w-max w-full border-white px-6 py-3 hover:bg-white hover:text-black font-medium mt-7 uppercase sm:px-20 sm:text-ssm"
-                >
-                  Call now
-                </button>
+                <a href="#callnow">
+                  <button
+                    class="font-display text-sm rounded-full border sm:w-max w-full border-white px-6 py-3 hover:bg-white hover:text-black font-medium mt-7 uppercase sm:px-20 sm:text-ssm"
+                  >
+                    Call now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -355,12 +377,12 @@
           </h2>
           <div class="grid grid-cols-3 pt-8 sm:gap-6">
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Dum Biryani
+                Chicken Cheese
               </p>
               <div class="card"></div>
               <img
@@ -370,7 +392,7 @@
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
@@ -385,12 +407,12 @@
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Chicken Karahi
+                Beef
               </p>
               <div class="card"></div>
               <img
@@ -412,22 +434,22 @@
           </h2>
           <div class="grid grid-cols-3 pt-8 sm:gap-6">
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Chinese Cuisine
+                Classic Cuisine
               </p>
               <div class="card"></div>
               <img
-                class="w-full h-full object-cover z-10"
+                class="w-full h-full object-cover object-left-top z-10"
                 src="./assets/d1.jpg"
                 alt=""
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
@@ -442,7 +464,7 @@
               />
             </div>
             <div
-              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10"
+              class="col-span-3 sm:col-span-1 h-48 sm:h-full sm:w-full relative ml-2 mr-2 mb-10 max-h-[400px]"
             >
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
@@ -451,7 +473,7 @@
               </p>
               <div class="card"></div>
               <img
-                class="w-full h-full object-cover z-10"
+                class="w-full h-full object-cover object-bottom z-10"
                 src="./assets/d3.jpg"
                 alt=""
               />
@@ -473,11 +495,13 @@
                 >
                   Just dial and order your favourite food now!
                 </h2>
-                <button
-                  class="font-display text-sm rounded-full sm:w-max w-full px-6 py-3 bg-black hover:bg-white hover:text-black font-medium mt-7 sm:text-ssm sm:px-28 tracking-wide border-black"
-                >
-                  Call Now
-                </button>
+                <a href="#callnow">
+                  <button
+                    class="font-display text-sm rounded-full sm:w-max w-full px-6 py-3 bg-black hover:bg-white hover:text-black font-medium mt-7 sm:text-ssm sm:px-28 tracking-wide border-black"
+                  >
+                    Call Now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -508,11 +532,13 @@
                     our highly demanding services from the past 27 years.
                   </span>
                 </p>
-                <button
-                  class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover:text-orange-primary font-medium sm:px-20 sm:text-ssm mb-24 mt-14"
-                >
-                  Learn More
-                </button>
+                <a href="./about.html">
+                  <button
+                    class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover-orange font-medium sm:px-20 sm:text-ssm mb-24 mt-14"
+                  >
+                    Learn More
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -577,11 +603,13 @@
               <h5 class="sm:text-sm font-display font-medium mt-8 sm:mt-4">
                 Book your catering service now!
               </h5>
-              <button
-                class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover:text-orange-primary font-medium sm:px-20 sm:text-ssm mb-8 mt-8 sm:mb-4"
-              >
-                Book now
-              </button>
+              <a href="#callnow">
+                <button
+                  class="text-sm rounded-full border sm:w-max w-full border-orange-primary px-6 py-3 hover:bg-white bg-orange-primary text-white hover-orange font-medium sm:px-20 sm:text-ssm mb-8 mt-8 sm:mb-4"
+                >
+                  Book now
+                </button>
+              </a>
             </div>
           </div>
         </section>
@@ -687,8 +715,9 @@
               </p>
               <div class="flex justify-center gap-4">
                 <a
+                  id="fb"
                   href="https://fb.com"
-                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover-orange"
                   target="_blank"
                 >
                   <i
@@ -696,8 +725,9 @@
                   ></i>
                 </a>
                 <a
-                  href="https://fb.com"
-                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                  id="linkedin"
+                  href="https://linkedin.com"
+                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover-orange"
                   target="_blank"
                 >
                   <i
@@ -705,8 +735,9 @@
                   ></i>
                 </a>
                 <a
-                  href="https://fb.com"
-                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                  id="insta"
+                  href="https://instagram.com"
+                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover-orange"
                   target="_blank"
                 >
                   <i
