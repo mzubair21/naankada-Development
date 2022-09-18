@@ -36,9 +36,9 @@ document.addEventListener('readystatechange', function () {
   })
 
   //links
-  var fb = 'http://fb.com/'
-  var insta = 'http://instagram.com/'
-  var linkedin = 'http://linkedin.com/'
+  var fb = 'https://www.facebook.com/Naankada/'
+  var insta = 'https://www.instagram.com/naankada'
+  var linkedin = 'https://www.instagram.com/naankada'
 
   var links = document.querySelectorAll('.link')
   links.forEach((link) => {

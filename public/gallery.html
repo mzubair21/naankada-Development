@@ -189,7 +189,7 @@
         <!--Landing Page-->
         <div
           style="background-image: url(./assets/gallery.jpg);"
-          class="relative top-0 h-[58vh] min-h-[450px] sm:min-h-[450px] sm:h-[65vh] bg-cover bg-center bg-fixed"
+          class="relative top-0 h-[58vh] min-h-[450px] sm:h-[65vh] bg-cover bg-center bg-fixed"
         >
           <div
             class="bg-[#0c0200]/40 lg:min-h-full h-full flex flex-col items-center justify-center text-white text-center selection:bg-black/80"
@@ -223,7 +223,11 @@
             <div class="card-g-container">
               <span class="block absolute top-0 w-full h-full peer z-10"></span>
               <div class="card card-anim"></div>
-              <img class="card-g-img" src="./assets/g3.jpg" alt="" />
+              <img
+                class="card-g-img object-left"
+                src="./assets/gal7.jpg"
+                alt=""
+              />
             </div>
             <div class="card-g-container">
               <span class="block absolute top-0 w-full h-full peer z-10"></span>
@@ -243,12 +247,16 @@
             <div class="card-g-container">
               <span class="block absolute top-0 w-full h-full peer z-10"></span>
               <div class="card card-anim"></div>
-              <img class="card-g-img" src="./assets/gal1.jpg" alt="" />
+              <img
+                class="card-g-img object-top"
+                src="./assets/gal8.jpg"
+                alt=""
+              />
             </div>
             <div class="card-g-container">
               <span class="block absolute top-0 w-full h-full peer z-10"></span>
               <div class="card card-anim"></div>
-              <img class="card-g-img" src="./assets/gal2.jpg" alt="" />
+              <img class="card-g-img" src="./assets/g3.jpg" alt="" />
             </div>
             <div class="card-g-container">
               <span class="block absolute top-0 w-full h-full peer z-10"></span>
@@ -262,7 +270,7 @@
         <section class="pt-10">
           <div
             class="bg-fixed bg-cover bg-no-repeat bg-center bg- w-full min-h-full h-96"
-            style="background-image: url(./assets/c3.jpg);"
+            style="background-image: url(./assets/s2.jpg);"
           >
             <div class="w-full h-full bg-black/60">
               <div
@@ -299,7 +307,7 @@
               <p
                 class="absolute top-0 w-full h-full text-white sm:items-end items-center justify-center flex font-semibold sm:font-bold peer z-10 peer sm:pb-12 lg:pb-18"
               >
-                Weeding
+                Wedding
               </p>
               <div class="card"></div>
               <img
@@ -427,6 +435,7 @@
       <footer>
         <div class="grid grid-cols-2 text-center text-white">
           <div
+            id="contact"
             class="col-span-2 sm:col-span-1 bg-gray-primary sm:h-80 items-center flex justify-center"
           >
             <article class="mt-16 mb-8">
@@ -434,9 +443,15 @@
               <p
                 class="text-ssm font-medium font-body leading-relaxed p-4 pb-8"
               >
-                <span class="block">+923106874447</span>
-                <span class="block">Mon - Fri: 08:00 am - 10:00 pm</span>
-                <span class="block">Sat - Sun: 10:00 am - 11:00 pm</span>
+                <a
+                  href="http://wa.me/+923126081289"
+                  class="hover-orange"
+                  target="_blank"
+                >
+                  <span class="block">+923126081289</span>
+                </a>
+                <span class="block">Mon - Fri: 07:00 am - 12:00 pm</span>
+                <span class="block">Sat - Sun: 07:00 am - 12:00 pm</span>
               </p>
             </article>
           </div>
@@ -452,8 +467,9 @@
               </p>
               <div class="flex justify-center gap-4">
                 <a
-                  href="https://fb.com"
-                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                  id="fb"
+                  href=""
+                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover-orange link fb"
                   target="_blank"
                 >
                   <i
@@ -461,8 +477,9 @@
                   ></i>
                 </a>
                 <a
-                  href="https://fb.com"
-                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                  id="linkedin"
+                  href=""
+                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover-orange link linkedin"
                   target="_blank"
                 >
                   <i
@@ -470,8 +487,8 @@
                   ></i>
                 </a>
                 <a
-                  href="https://fb.com"
-                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover:text-orange-primary"
+                  href=""
+                  class="text-ssm bg-gray-primary rounded-full relative p-5 sm:p-6 hover-orange link insta"
                   target="_blank"
                 >
                   <i
