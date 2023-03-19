@@ -55,7 +55,7 @@ document.addEventListener("readystatechange", function () {
   var s =
       "https://www.facebook.com/people/Naan-Point/100089922966252/?mibextid=ZbWKwL",
     n = "https://instagram.com/naan.point?igshid=ZDdkNTZiNTM=",
-    e = "https://instagram.com/naan.point?igshid=ZDdkNTZiNTM=",
+    e = "http://wa.me/+923175988140",
     o = document.querySelectorAll(".link");
   o.forEach((t) => {
     (t.target = "_blank"),
